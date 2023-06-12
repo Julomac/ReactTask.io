@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(69, 168, 160, 0.445) 0% , rgba(13, 253, 253, 0.671)100%);
+  font-family: 'Architects Daughter', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+  background-color: rgba(255, 255, 255, 0.521);
+  border-radius: 10px;
+  margin: auto;
+  padding: 5%;
+  width: 95%;
+  max-width: 800px;
+  min-width: 350px;
+  box-shadow: 0px 0px 15px 1px rgb(77, 76, 76);
 }
+
+
+.addingLayout{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+.textInput{
+  width:75%;
+  padding: 10px;
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 1px;
+  font-weight: bolder;
+  color: black;
+}
+.addTask{
+  width: 15%;
+  padding: 3px;
+  background-color: rgb(130, 7, 212);
+  color: white;
+  font-size: 15pt;
+}
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding: 10px;
+  border: solid 1px rgb(105, 105, 105);
+  border-radius: 5px;
+  font-size: 15pt;
+}
+
+input[type='checkbox']{
+  transform: scale(2.5);
+  margin-left: 20px;
+  
+}
+.clearLayout{
+  display: flex;
+}
+.clearCompleted{
+  background-color: rgb(130, 7, 212);
+  color: white;
+  font-size: 15pt;
+  padding: 10px;
+  margin: auto;
+}
+
